@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Template.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <title>Coffee</title>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container">
+
+            <a href="#"><img class="logo" src="./image/logo.png" alt=""></a>
+            <div class="nav">
+                <i class="fas fa-bars toggle-menu"></i>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">what's New</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+
+            </div>
+        </div>
+
+    </header>
+
+    <section>
+
+        <div class="container">
+
+            <div class="textBox">
+                <h2>It's Not just Coffee <br>It's <span>Starbucks</span> </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis pariatur enim sit eveniet.
+                    Nesciunt temporibus quae voluptatibus officia. Nesciunt facere impedit non nulla perspiciatis
+                    doloribus nostrum voluptate veniam, nisi adipisci!</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="./image/img-1.png" class="starbucks">
+            </div>
+        </div>
+        <div class="circle"></div>
+    </section>
+    <aside>
+        <ul class="footer">
+            <li><img src="./image/thumb1.png"
+                    onclick="imgSlider('./image/img-1.png');colorCircle('var(--color-1)');spanColor('var(--color-1)');aColor('var(--color-1)');toggLe('var(--color-1)')   ">
+            </li>
+            <li><img src="./image/thumb2.png"
+                    onclick="imgSlider('./image/img-2.png');colorCircle('var(--color-2)');spanColor('var(--color-2)');aColor('var(--color-2)');toggLe('var(--color-2)') ">
+            </li>
+            <li><img src="./image/thumb3.png"
+                    onclick="imgSlider('./image/img-3.png');colorCircle('var(--color-3)');spanColor('var(--color-3)');aColor('var(--color-3)');toggLe('var(--color-3)') ">
+            </li>
+        </ul>
+    </aside>
+    <footer>
+        <ul class="sci">
+            <li><a href="#"><img src="./image/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./image/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="./image/twitter.png" alt=""></a></li>
+        </ul>
+    </footer>
+
+
+
+
+
+
+
+    <script>
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+        function colorCircle(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+        function spanColor(colors) {
+            const textBox = document.querySelector('.textBox span');
+            textBox.style.color = colors;
+        }
+        function aColor(colorw) {
+            const textBox = document.querySelector(' .textBox a ');
+            textBox.style.background = colorw;
+        }
+        function toggLe(menu) {
+            const toggleMenu = document.qureySelector(' ul ');
+            toggleMenu.style.background = menu;
+        }
+    </script>
+
+</body>
+
+</html>
