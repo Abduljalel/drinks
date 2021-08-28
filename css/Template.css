@@ -70,7 +70,6 @@ header .container .toggle-menu {
   color: var(--color-1) ;
   cursor: pointer;
 }
-
 @media (min-width: 767px) {
   header .container .toggle-menu {
     display: none;
@@ -175,9 +174,18 @@ section .container .textBox a {
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
 }
+@media (max-width: 767px) {
+  section .container .textBox a {
+    padding: 4px 8px;
+  }
+  section .container .textBox  p {
+    width: 258px;
+  }
+}
 section .container .imgBox {
 max-width: 400px;
 }
+
 section .container .imgBox img {
   width: 370px;
 }
@@ -220,6 +228,11 @@ aside ul li:hover {
 aside ul li img {
   max-width: 60px;
 } 
+@media (max-width: 767px) {
+  aside ul li img {
+    max-width: 55px;
+  }
+}
 footer {
   position: absolute;
   right: 20px;
@@ -240,6 +253,18 @@ footer .sci {
 footer .sci li {
   padding: 10px;
 }
+@media (max-width: 767px) {
+  footer .sci li #img{
+    width: 15px;
+  }
+  footer .sci li img:last-child {
+    width: 28px;
+  }
+  footer .sci li img:nth-child(2) {
+    width: 28px;
+  }
+
+}
 footer .sci li:hover {
   transform: translateX(-10px);
   -webkit-transform: translateX(-10px);
@@ -259,6 +284,6 @@ footer .sci li:hover {
 }
 @media (max-width: 767px) {
   .circle {
-    clip-path: circle(250px at right 70%);
+    clip-path: circle(250px at 50% bottom);
   }
 }
