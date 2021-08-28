@@ -130,6 +130,12 @@ section .container {
   align-items: center;
   position: relative;
 }
+@media (max-width: 767px) {
+  section .container {
+    flex-direction: column;
+    align-items: unset;
+  } 
+}
 section .container .textBox {
   width: 550px;
   position: relative;
@@ -142,7 +148,8 @@ section .container .textBox h2 {
 }
 @media (max-width: 767px) {
   section .container .textBox h2 {
-    font-size: 2em;
+    font-size: 1.4em;
+    font-weight: bold;
     line-height: 1em;
   }
 }
@@ -173,6 +180,11 @@ max-width: 400px;
 }
 section .container .imgBox img {
   width: 370px;
+}
+@media (max-width: 767px) {
+  section .container .imgBox img {
+    width: 250px;
+  }  
 }
 aside {
   position: absolute;
@@ -244,4 +256,9 @@ footer .sci li:hover {
   background: var(--color-1);
   clip-path: circle(334px at 94% 62%);
   z-index: -1;
+}
+@media (max-width: 767px) {
+  .circle {
+    clip-path: circle(250px at right 70%);
+  }
 }
