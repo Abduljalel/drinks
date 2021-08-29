@@ -222,8 +222,19 @@ section .container .textBox a {
 }
 section .container .imgBox {
 max-width: 400px;
-}
 
+}
+@media (max-width: 350px) {
+  section .container .imgBox {
+    position: absolute;
+    top: -52px;
+  }       
+  section .container .textBox {
+        width: 550px;
+        position: absolute;
+        top: 227px;
+      }
+}
 section .container .imgBox img {
   width: 370px;
 }
@@ -241,6 +252,14 @@ aside {
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
+}
+@media (max-width: 350px) {
+  aside {
+    
+    bottom: 1px;
+   
+    right: 94px;
+  }
 }
 aside ul {
   display: flex;
@@ -268,7 +287,7 @@ aside ul li img {
 } 
 @media (max-width: 767px) {
   aside ul li img {
-    max-width: 55px;
+    max-width: 43px;
   }
 }
 footer {
@@ -323,8 +342,9 @@ footer .sci li:hover {
   clip-path: circle(334px at 94% 62%);
   z-index: -1;
 }
-@media (max-width: 767px) {
+@media (max-width: 350px) {
   .circle {
-    clip-path: circle(250px at 50% bottom);
+    clip-path: circle(111px at 50% center);
+    top: -87px;
   }
 }
