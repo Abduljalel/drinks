@@ -224,7 +224,7 @@ section .container .imgBox {
 max-width: 400px;
 
 }
-@media (max-width: 350px) {
+@media (max-width: 400px) {
   section .container .imgBox {
     position: absolute;
     top: -52px;
@@ -253,7 +253,7 @@ aside {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
 }
-@media (max-width: 350px) {
+@media (max-width: 400px) {
   aside {
     
     bottom: 1px;
@@ -342,7 +342,7 @@ footer .sci li:hover {
   clip-path: circle(334px at 94% 62%);
   z-index: -1;
 }
-@media (max-width: 350px) {
+@media (max-width: 400px) {
   .circle {
     clip-path: circle(111px at 50% center);
     top: -87px;
