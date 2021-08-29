@@ -21,14 +21,14 @@
 
             <a href="#"><img class="logo" src="./image/logo.png" alt=""></a>
             <div class="nav">
-                <div id="mySidenav" class="sidenav" >
+                <div id="mySidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <a href="#">Home</a>
                     <a href="#">Menu</a>
                     <a href="#">what's New</a>
                     <a href="#">Contact</a>
                 </div>
-                <span style="font-size:30px;cursor:pointer"  onclick="openNav()">&#9776; </span>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#">Menu</a></li>
@@ -62,13 +62,13 @@
     <aside>
         <ul>
             <li><img src="./image/thumb1.png"
-                    onclick="imgSlider('./image/img-1.png');colorCircle('var(--color-1)');spanColor('var(--color-1)');aColor('var(--color-1)');colorNav('rgb(1 113 67 / 50%)')   ">
+                    onclick="imgSlider('./image/img-1.png');colorCircle('var(--color-1)');spanColor('var(--color-1)');aColor('var(--color-1)');colorNav('rgb(1 113 67 / 50%)');bodyBa('rgba(1, 113, 67, 0.15)')  ">
             </li>
             <li><img src="./image/thumb2.png"
-                    onclick="imgSlider('./image/img-2.png');colorCircle('var(--color-2)');spanColor('var(--color-2)');aColor('var(--color-2)');colorNav('rgb(215 82 177 / 50%)') ">
+                    onclick="imgSlider('./image/img-2.png');colorCircle('var(--color-2)');spanColor('var(--color-2)');aColor('var(--color-2)');colorNav('rgb(215 82 177 / 50%)');bodyBa('rgba(235, 116, 149, 0.15)') ">
             </li>
             <li><img src="./image/thumb3.png"
-                    onclick="imgSlider('./image/img-3.png');colorCircle('var(--color-3)');spanColor('var(--color-3)');aColor('var(--color-3)');colorNav('rgb(235 116 149 / 50%)') ">
+                    onclick="imgSlider('./image/img-3.png');colorCircle('var(--color-3)');spanColor('var(--color-3)');aColor('var(--color-3)');colorNav('rgb(235 116 149 / 50%)');bodyBa('rgba(241, 142, 211, 0.15') ">
             </li>
         </ul>
     </aside>
@@ -94,27 +94,35 @@
             const circle = document.querySelector('.circle');
             circle.style.background = color;
         }
+        function bodyBa(color) {
+            const bodyw = document.querySelector('body');
+            bodyw.style.background = color;
+        }
         function spanColor(colors) {
             const textBox = document.querySelector('.textBox span');
             textBox.style.color = colors;
         }
         function aColor(colorw) {
             const textBox = document.querySelector('.textBox a ');
+            const loveBox = document.querySelector('.sci ');
             textBox.style.background = colorw;
+            loveBox.style.background = colorw;
         }
-     
+
         function colorNav(color) {
             document.getElementById("mySidenav").style.background = color;
         }
-        
+
 
 
         function openNav() {
-            document.getElementById("mySidenav").style.width = "100%";
+            document.getElementById("mySidenav").style.height = "270%";
+
         }
 
+
         function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("mySidenav").style.height = "0";
         }
     </script>
 
