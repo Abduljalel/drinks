@@ -10,7 +10,7 @@
     --color-3:#d752b1;
 }
 /* Small */
-/* @media (min-width: 768px) {
+ @media (min-width: 768px) {
     .container {
       width: 750px;
     }
@@ -65,18 +65,56 @@ header .container {
 header .container  .logo {
   width: 80px;
 }
-header .container .toggle-menu {
-  font-size: 20px;
-  color: var(--color-1) ;
-  cursor: pointer;
+/*****/
+.sidenav {
+  /* height:; */
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 98px;
+  right: 0;
+  background: rgb(1 113 67 / 50%);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: center;
 }
 @media (min-width: 767px) {
-  header .container .toggle-menu {
+  .sidenav {
     display: none;
-   }
-
-  
+  }
+  .sidenav + span{
+    display: none;
+  }
 }
+.sidenav a {
+  padding: 12px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #333;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+ 
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*******/
+
 header .container .nav  {
  display: flex;
 }
